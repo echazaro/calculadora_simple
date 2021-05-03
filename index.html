@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Styles.css">
+    <title>Calculadora</title>
+</head>
+<body>
+  
+    <section class="contenedor__principal">
+        <div class="primervalor">
+            <label for="primerValorOperacionesSimples">Primer Valor</label><br>
+        <input type="text" name="primerValorOperacionesSimples" id="primerValorOperacionesSimples" >
+        </div>
+        <div class="segundovalor">
+            <label for="segundoValorOperacionesSimples">Segundo Valor</label><br>
+        <input type="text" name="segundoValorOperacionesSimples" id="segundoValorOperacionesSimples" >
+
+        </div>
+
+        <div class="resultado">
+            <label for="">Resultado</label><br>
+            <input type="text" name="resultadoOperacionesSimples" id="resultadoOperacionesSimples" disabled>
+        </div>
+
+       
+    </section>
+
+    <section class="contenedor__botones">
+        <div class="botonesOperaciones">
+            <button class="key--operator" data-action="add" onclick="operacionSuma()">+</button>
+            <button class="key--operator" data-action="subtract" onclick="operacionResta()">-</button>
+            <button class="key--operator" data-action="multiply" onclick="operacionMultiplicacion()">&times;</button>
+            <button class="key--operator" data-action="divide" onclick="operacionDivision()">÷</button>
+            <button class="key--operator" data-action="power" onclick="operacionPotencia()">^</button>
+
+        </div>
+    </section>
+
+
+
+
+
+    <section class="contenedor__principal__operacion__trigonometrica">
+        <div class="valor">
+
+            <label for="">Valor</label><br>
+
+            <input type="text" name="valorOperacionTrigonometrica" id="valorOperacionTrigonometrica">
+    
+        </div>
+
+        <div class="resultadoOperacionTrigonometrica">
+
+            <label for="">Resultado</label><br>
+
+            <input type="text" name="resultadoTrigonometrica" id="resultadoTrigonometrica" disabled>
+            
+        </div>
+    </section>
+
+    <section class="contenedor__botones__trigo">
+        <div class="botonesTrigonom">
+            <button class="key--operator" data-action="sin" onclick="operacionSin()">Sin</button>
+            <button class="key--operator"data-action="cos" onclick="operacionCos()">Cos</button>
+            <button class="key--operator" data-action="tan" onclick="operacionSin()">Tan</button>
+        </div>
+    </section>
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/operaciones.js"></script>
+
+</body>
+</html>

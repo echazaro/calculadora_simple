@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    height: 100vh;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+.contenedor__principal {
+    width: 45%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contenedor__botones {
+    width: 30%;
+    height: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.contenedor__botones .key--operator {
+    width: 50px;
+}
+
+ 
+
+.contenedor__principal__operacion__trigonometrica {
+    width: 45%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contenedor__principal__operacion__trigonometrica input[type="text"] {
+    margin-right: 30px;
+}
+
+.contenedor__botones__trigo {
+    width: 30%;
+    height: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+
